@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Contador de Plantações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌱 Meu Jardim & Plantações</h1>
+        <p>Gerencie suas plantas, flores e descubra o valor total do seu cultivo!</p>
+
+        <form id="plant-form">
+            <div class="form-group">
+                <label for="plant-name">Nome da Planta/Flor:</label>
+                <input type="text" id="plant-name" placeholder="Ex: Rosa Linda, Samambaia" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="plant-price">Preço Estimado (R$):</label>
+                <input type="number" id="plant-price" step="0.01" placeholder="Ex: 25.50" required>
+            </div>
+
+            <button type="submit">Adicionar ao Jardim</button>
+        </form>
+
+        <h2>Plantas Cadastradas</h2>
+        <table id="plant-table">
+            <thead>
+                <tr>
+                    <th>Planta / Flor</th>
+                    <th>Preço Estimado</th>
+                    <th>Ação</th>
